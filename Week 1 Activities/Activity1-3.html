@@ -99,18 +99,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>The Palmer Penguins dataset had a variety of column types with which to explore some nice visualizations. The <code>mtcars</code> dataset is another popular dataset for doing some simple data work, but does not contain the same types of variables.</p>
 <p>Run the following code to load the <code>mtcars</code> dataset and explore the observations and variables contained within. To learn more about this dataset check out <a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html">this site</a></p>
-<div class="cell" data-execution_count="105">
+<div class="cell" data-execution_count="68">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>mtcars <span class="op">=</span> sm.datasets.get_rdataset(<span class="st">"mtcars"</span>, <span class="st">"datasets"</span>, cache<span class="op">=</span><span class="va">True</span>).data</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-outputid="ece118ac-4784-4038-ffd2-54ceec0339b3" data-execution_count="106">
+<div class="cell" data-outputid="08ccdd34-64ab-4d89-fbe1-b97fe5ea8cb3" data-execution_count="69">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="106">
+<div class="cell-output cell-output-display" data-execution_count="69">
 
-  <div id="df-83b49d8e-d3dc-4e42-b51e-eb2e8ab6aa9a" class="colab-df-container">
+  <div id="df-5e3343eb-8d6a-439b-a38a-c9eb39f7401d" class="colab-df-container">
     <div>
 
 
@@ -602,7 +602,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-83b49d8e-d3dc-4e42-b51e-eb2e8ab6aa9a')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5e3343eb-8d6a-439b-a38a-c9eb39f7401d')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -652,12 +652,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-83b49d8e-d3dc-4e42-b51e-eb2e8ab6aa9a button.colab-df-convert');
+        document.querySelector('#df-5e3343eb-8d6a-439b-a38a-c9eb39f7401d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-83b49d8e-d3dc-4e42-b51e-eb2e8ab6aa9a');
+        const element = document.querySelector('#df-5e3343eb-8d6a-439b-a38a-c9eb39f7401d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -677,8 +677,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-<div id="df-9cbda5eb-7c66-445d-9f73-2cf5746e20c7">
-  <button class="colab-df-quickchart" onclick="quickchart('df-9cbda5eb-7c66-445d-9f73-2cf5746e20c7')" title="Suggest charts." style="display:none;">
+<div id="df-76394061-c7e9-41f9-ae0e-648f19286e70">
+  <button class="colab-df-quickchart" onclick="quickchart('df-76394061-c7e9-41f9-ae0e-648f19286e70')" title="Suggest charts." style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -794,7 +794,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-9cbda5eb-7c66-445d-9f73-2cf5746e20c7 button');
+        document.querySelector('#df-76394061-c7e9-41f9-ae0e-648f19286e70 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -806,7 +806,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>The statement “the <code>mtcars</code> dataset does not contain the same types of variables as the penguins dataset” is a little true and a little false. There are no variables that contain text values, BUT there are variables that it makes sense to consider categorical variables. In most situations, it makes sense to treat the values of categorical variables as text values instead of numeric values.</p>
 <p>Use the <code>astype()</code> method to convert the categorical variables of the <code>mtcars</code> (df) dataset to have text values in the code chunk below. We’ve done one for you!</p>
-<div class="cell" data-outputid="87b4b8bf-de40-42fd-f7e8-5c8dc8976781" data-execution_count="107">
+<div class="cell" data-outputid="b48ac3ca-188f-4297-b2d2-c74ea04132e4" data-execution_count="70">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"am"</span>] <span class="op">=</span> df[<span class="st">"am"</span>].astype(<span class="bu">str</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the other variables below</span></span>
@@ -820,9 +820,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"carb"</span>] <span class="op">=</span> df[<span class="st">"carb"</span>].astype(<span class="bu">str</span>)</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="107">
+<div class="cell-output cell-output-display" data-execution_count="70">
 
-  <div id="df-c003b2e0-3d38-469f-9ea7-5b405c92786a" class="colab-df-container">
+  <div id="df-94db76a9-d11a-453b-9c09-6ee4be14eea2" class="colab-df-container">
     <div>
 
 
@@ -1314,7 +1314,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-c003b2e0-3d38-469f-9ea7-5b405c92786a')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-94db76a9-d11a-453b-9c09-6ee4be14eea2')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -1364,12 +1364,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-c003b2e0-3d38-469f-9ea7-5b405c92786a button.colab-df-convert');
+        document.querySelector('#df-94db76a9-d11a-453b-9c09-6ee4be14eea2 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c003b2e0-3d38-469f-9ea7-5b405c92786a');
+        const element = document.querySelector('#df-94db76a9-d11a-453b-9c09-6ee4be14eea2');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1389,8 +1389,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-<div id="df-dbed7c5b-4e19-408f-9616-27e688aa1eda">
-  <button class="colab-df-quickchart" onclick="quickchart('df-dbed7c5b-4e19-408f-9616-27e688aa1eda')" title="Suggest charts." style="display:none;">
+<div id="df-cb4ce50a-eff4-4222-a0bf-fe7d6ff3dfaf">
+  <button class="colab-df-quickchart" onclick="quickchart('df-cb4ce50a-eff4-4222-a0bf-fe7d6ff3dfaf')" title="Suggest charts." style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -1506,7 +1506,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-dbed7c5b-4e19-408f-9616-27e688aa1eda button');
+        document.querySelector('#df-cb4ce50a-eff4-4222-a0bf-fe7d6ff3dfaf button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -1532,9 +1532,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="when-cyl-is-converted-to-a-float-value-the-categories-are-removed-transforming-the-overlapping-histograms-to-one-general-histogram" class="level2">
 <h2 class="anchored" data-anchor-id="when-cyl-is-converted-to-a-float-value-the-categories-are-removed-transforming-the-overlapping-histograms-to-one-general-histogram">When “cyl” is converted to a float value, the categories are removed, transforming the overlapping histograms to one general histogram</h2>
-<div class="cell" data-outputid="5c86aaed-35c2-44ee-9d4f-c43bcfe286f6" data-execution_count="108">
+<div class="cell" data-outputid="9ff5d714-d08f-4a99-8d31-6061c55b29fc" data-execution_count="71">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot for (1) here</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, geom_point, aes, geom_boxplot, geom_histogram, geom_density, geom_line</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> ggplot, geom_point, aes, geom_boxplot, geom_histogram, geom_density, geom_line, geom_violin, geom_tile, scale_fill_gradient, geom_density_2d</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>(ggplot(mtcars,</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>aes(</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"am"</span>,</span>
@@ -1546,11 +1546,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 <p><img src="Activity1-3_files/figure-html/cell-5-output-1.png" class="img-fluid"></p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="108">
+<div class="cell-output cell-output-display" data-execution_count="71">
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<div class="cell" data-outputid="345e3a6c-23fb-4c41-94dc-8ae61b4ee4be" data-execution_count="129">
+<div class="cell" data-outputid="7d0e80ad-ccef-4648-ee1c-dee0b63a466f" data-execution_count="72">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#boxplot with float variable</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"am"</span>] <span class="op">=</span> df[<span class="st">"am"</span>].astype(<span class="bu">float</span>)</span>
@@ -1568,14 +1568,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 <p><img src="Activity1-3_files/figure-html/cell-6-output-1.png" class="img-fluid"></p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="129">
+<div class="cell-output cell-output-display" data-execution_count="72">
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="130">
+<div class="cell" data-execution_count="73">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"am"</span>] <span class="op">=</span> df[<span class="st">"am"</span>].astype(<span class="bu">str</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-outputid="db0535a4-4a59-4462-d042-88327cc02379" data-execution_count="134">
+<div class="cell" data-outputid="0d207c36-480e-42cd-fd05-8313788b0403" data-execution_count="74">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot for (2) here</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>(ggplot(mtcars,</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>aes(</span>
@@ -1590,11 +1590,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 <p><img src="Activity1-3_files/figure-html/cell-8-output-2.png" class="img-fluid"></p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="134">
+<div class="cell-output cell-output-display" data-execution_count="74">
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<div class="cell" data-outputid="b41e53f5-e8b6-4979-84f0-00c6abae248d" data-execution_count="137">
+<div class="cell" data-outputid="eac7399c-3d93-4936-e42d-76afcbcafd95" data-execution_count="75">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#histogram with float variable</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="bu">float</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>(ggplot(mtcars,</span>
@@ -1610,68 +1610,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 <p><img src="Activity1-3_files/figure-html/cell-9-output-2.png" class="img-fluid"></p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="137">
+<div class="cell-output cell-output-display" data-execution_count="75">
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="138">
+<div class="cell" data-execution_count="76">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"cyl"</span>] <span class="op">=</span> df[<span class="st">"cyl"</span>].astype(<span class="bu">str</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Some of these variables, like the <code>cyl</code> variable, have numeric values that actually make sense as numbers (i.e.&nbsp;the number of cylinders in the engine). However, it doesn’t make the most sense to “do math” with this type of variable (e.g.&nbsp;take averages and such) because there are so few different value this can take on AND they’re an explicit choice made by the car manufacturer. So, it makes more sense to treat the <code>cyl</code> variable as a categorical variable despite it having numeric values.</p>
 <p>You will need to keep these kinds of nuances about data in mind as you work with an increasing variety and richness of data, and do more complex things with them.</p>
 <p>Choose 3 new <code>geometries</code> from the <a href="https://www.data-to-viz.com/">data-to-viz website</a> for graphs that you’d like to explore using the <code>mtcars</code> dataset, and then create those graphs!</p>
-<div class="cell" data-outputid="3a859f36-030d-48b5-e47c-816143886491" data-execution_count="110">
+<div class="cell" data-outputid="9e02efc7-037c-41ff-c55f-3cff52b2a2bc" data-execution_count="77">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot with first new geometry here</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>(ggplot(mtcars,</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>aes(</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"hp"</span>,</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  fill <span class="op">=</span> <span class="st">"gear"</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_density(alpha <span class="op">=</span> <span class="fl">0.5</span>)</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"gear"</span>,</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  y <span class="op">=</span> <span class="st">"hp"</span>,</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  fill <span class="op">=</span> <span class="st">"gear"</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_violin()</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="Activity1-3_files/figure-html/cell-11-output-1.png" class="img-fluid"></p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="110">
+<div class="cell-output cell-output-display" data-execution_count="77">
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<div class="cell" data-outputid="ddefcbfe-6ca1-458e-cd29-615c960d1506" data-execution_count="111">
+<div class="cell" data-outputid="3e5f70b1-55c0-4cfa-e92b-faf0a007d1e9" data-execution_count="78">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot with second new geometry here</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>(ggplot(mtcars,</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>aes(</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"disp"</span>,</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  y <span class="op">=</span> <span class="st">"mpg"</span>,</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  color <span class="op">=</span> <span class="st">"gear"</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"gear"</span>,</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  y <span class="op">=</span> <span class="st">"carb"</span>,</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  fill <span class="op">=</span> <span class="st">"qsec"</span></span>
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_point()</span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_tile()</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> scale_fill_gradient(low <span class="op">=</span> <span class="st">"white"</span>, high <span class="op">=</span> <span class="st">"blue"</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="Activity1-3_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="111">
+<div class="cell-output cell-output-display" data-execution_count="78">
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<div class="cell" data-outputid="c3d9e00c-ccbd-48d1-a1e9-00838952155e" data-execution_count="112">
+<div class="cell" data-outputid="987fe45b-b20e-4956-f883-3d309fe5fb30" data-execution_count="84">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot with third new geometry here</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>(ggplot(mtcars,</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>aes(</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"hp"</span>,</span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  y <span class="op">=</span> <span class="st">"mpg"</span>,</span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  color <span class="op">=</span> <span class="st">"gear"</span></span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_point()</span>
-<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_line()</span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  x <span class="op">=</span> <span class="st">"qsec"</span>,</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  y <span class="op">=</span> <span class="st">"mpg"</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_density_2d()</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="Activity1-3_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="112">
+<div class="cell-output cell-output-display" data-execution_count="84">
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
-<div class="cell" data-outputid="c8088642-e1d5-4b64-b5d6-c4711d2a81aa" data-execution_count="143">
+<div class="cell" data-outputid="7e15e35b-3351-45ce-955a-ef1c8426a41a" data-execution_count="80">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot with fourth new geometry here</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>(ggplot(mtcars,</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>aes(</span>
@@ -1685,7 +1685,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-display">
 <p><img src="Activity1-3_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="143">
+<div class="cell-output cell-output-display" data-execution_count="80">
 <pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
 </div>
 </div>
