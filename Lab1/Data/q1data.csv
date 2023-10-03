@@ -72,7 +72,6 @@ income,life_exp,population,year,country,four_regions,six_regions,eight_regions,w
 10300,65.7,749000,2010,Guyana,americas,america,america_south,Latin America & Caribbean
 2860,60,9950000,2010,Haiti,americas,america,america_north,Latin America & Caribbean
 4960,71,8320000,2010,Honduras,americas,america,america_north,Latin America & Caribbean
-53500,83,,2010,"Hong Kong, China",asia,east_asia_pacific,east_asia_pacific,East Asia & Pacific
 25100,75.1,9930000,2010,Hungary,europe,europe_central_asia,europe_east,Europe & Central Asia
 47300,82.8,320000,2010,Iceland,europe,europe_central_asia,europe_west,Europe & Central Asia
 4390,67.6,1230000000,2010,India,asia,south_asia,asia_west,South Asia
@@ -167,7 +166,6 @@ income,life_exp,population,year,country,four_regions,six_regions,eight_regions,w
 49100,82,9390000,2010,Sweden,europe,europe_central_asia,europe_west,Europe & Central Asia
 64600,83,7810000,2010,Switzerland,europe,europe_central_asia,europe_west,Europe & Central Asia
 6880,72.8,21400000,2010,Syria,asia,middle_east_north_africa,asia_west,Middle East & North Africa
-44400,79.5,,2010,Taiwan,asia,east_asia_pacific,east_asia_pacific,East Asia & Pacific
 2370,68.1,7530000,2010,Tajikistan,asia,europe_central_asia,asia_west,Europe & Central Asia
 2100,61.7,44300000,2010,Tanzania,africa,sub_saharan_africa,africa_sub_saharan,Sub-Saharan Africa
 14500,77.4,67200000,2010,Thailand,asia,east_asia_pacific,east_asia_pacific,East Asia & Pacific
